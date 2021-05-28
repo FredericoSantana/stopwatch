@@ -9,7 +9,8 @@
 </p>
 
 <br>
-![](gold-stopwatch.gif)
+
+![gold-stopwatch](https://user-images.githubusercontent.com/83486018/120026548-9b9c2c80-bfc8-11eb-9e43-e0409d18d539.gif)
 
 ## 🚀 Tecnologias
 
