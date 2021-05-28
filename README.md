@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="StopWatch" title="StopWatch" src=".img/stopwatch.png" width="220px"/>
+  <img alt="StopWatch" title="StopWatch" src="stopwatch.png" width="40%"/>
 </h1>
 
 <p align="center">
