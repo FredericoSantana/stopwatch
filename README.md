@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="StopWatch" title="StopWatch" src=".img/stopwatch.jpg" width="220px"/>
+  <img alt="StopWatch" title="StopWatch" src=".img/stopwatch.png" width="220px"/>
 </h1>
 
 <p align="center">
@@ -29,6 +29,6 @@ Você pode visualizar o repositório do autor no [GitHub](https://github.com/tin
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [desse link](https://gold-stopwatch.netlify.app/).
+Você pode visualizar o layout do projeto original através [desse link](https://gold-stopwatch.netlify.app/).
 
 ---

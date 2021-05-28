@@ -36,11 +36,9 @@ h1 {
 .circle {
     display: flex;
     justify-content: center;
-    align-items: center;
-  
+    align-items: center;  
     height: 270px;
-    width: 270px;
-  
+    width: 270px;  
     border: 2px solid;
     border-radius: 50%;
   }
