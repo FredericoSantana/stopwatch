@@ -18,10 +18,19 @@ function timeToString(time) {
     let formattedMM = mm.toString().padStart(2, "0");
     let formattedSS = ss.toString().padStart(2, "0");
 
-    return `${hh}:${mm}:${ss}`;
+    return `${formattedHH}:${formattedMM}:${formattedSS}`;
 }
 
+let startTime; // constante do valor de tempo no início
+let elapsedTime; // constante do valor de tempo no fim
 
+function start() {
+    startTime = Date.now();
+    setInterval(function printTime() {
+        elapsedTime = Date.now() - startTime; //função para calcular a diferença de tempo a cada segundo
+        document.getElementById("display").innerHTML = timeToString(elapsedTime); //resultado da função no html
+    }, 1000);
+}
 
 // Uso da função Click e EventListener para funcionalidade dos botões do cronômetro
 let playButton = document.getElementById("playButton");
