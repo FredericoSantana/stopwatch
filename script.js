@@ -20,3 +20,14 @@ function timeToString(time) {
 
     return `${hh}:${mm}:${ss}`;
 }
+
+
+
+// Uso da função Click e EventListener para funcionalidade dos botões do cronômetro
+let playButton = document.getElementById("playButton");
+let pauseButton = document.getElementById("pauseButton");
+let resetButton = document.getElementById("resetButton");
+
+playButton.addEventListener("click", start);
+playButton.addEventListener("click", pause);
+playButton.addEventListener("click", reset);
