@@ -12,24 +12,31 @@ function timeToString(time) {
     // Arrendondamento do resultado da conversão em segundos de número fracionado em inteiro
     let ss = Math.floor(diffInSec);
 
+    // Para ser mais dinâmico, mostrar cálculo para milisegundos
+    let diffInMs = (diffInSec - ss) * 100; //Multiplica-se por 100 para mostrar apenas dois dígitos
+    let ms = Math.floor(diffInMs);
 
     //Uso de padStart() para usar dois dígitos
-    let formattedHH = hh.toString().padStart(2, "0");
+    //let formattedHH = hh.toString().padStart(2, "0");
     let formattedMM = mm.toString().padStart(2, "0");
     let formattedSS = ss.toString().padStart(2, "0");
+    let formattedMS = ms.toString().padStart(2, "0");
 
-    return `${formattedHH}:${formattedMM}:${formattedSS}`;
+    return `${formattedMM}:${formattedSS}:${formattedMS}`;
 }
 
-let startTime; // constante do valor de tempo no início
-let elapsedTime; // constante do valor de tempo no fim
-
+// - Criação das variáves startTime e elapsedTime
+// - Função para armazenar Date.now() na variável startTime
+// - Uso da setInterval para definir elapsedTime como a diferença entre Date.now() renovado a cada 1000 milisegundos e startTime
+// - Uso do innerHTML para mostrar o resultado no HTML
+let startTime;
+let elapsedTime;
 function start() {
     startTime = Date.now();
     setInterval(function printTime() {
-        elapsedTime = Date.now() - startTime; //função para calcular a diferença de tempo a cada segundo
-        document.getElementById("display").innerHTML = timeToString(elapsedTime); //resultado da função no html
-    }, 1000);
+        elapsedTime = Date.now() - startTime;
+        document.getElementById("display").innerHTML = timeToString(elapsedTime);
+    }, 10); // renova a cada 10 milisegundos 
 }
 
 // Uso da função Click e EventListener para funcionalidade dos botões do cronômetro
