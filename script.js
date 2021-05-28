@@ -25,6 +25,11 @@ function timeToString(time) {
     return `${formattedMM}:${formattedSS}:${formattedMS}`;
 }
 
+//separação da lógica para mostrar o resultado no HTML para uma função própria para melhorar a leitura
+function print(txt) {
+    document.getElementById("display").innerHTML = txt;
+}
+
 // - Criação das variáves startTime e elapsedTime
 // - Função para armazenar Date.now() na variável startTime
 // - Uso da setInterval para definir elapsedTime como a diferença entre Date.now() renovado a cada 1000 milisegundos e startTime
@@ -35,8 +40,18 @@ function start() {
     startTime = Date.now();
     setInterval(function printTime() {
         elapsedTime = Date.now() - startTime;
-        document.getElementById("display").innerHTML = timeToString(elapsedTime);
+        print(timeToString(elapsedTime));
     }, 10); // renova a cada 10 milisegundos 
+    //substituição do botão 'play' pelo 'pause'
+    showButton("PAUSE");
+}
+
+// Função para os botões 'play' e 'pause'
+function showButton(buttonKey) {
+    const buttonToShow = buttonKey === "PLAY" ? playButton : pauseButton;
+    const buttonToHide = buttonKey === "PLAY" ? pauseButton : playButton;
+    buttonToShow.style.display = "block";
+    buttonToHide.style.display = "none";
 }
 
 // Uso da função Click e EventListener para funcionalidade dos botões do cronômetro
