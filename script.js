@@ -25,25 +25,39 @@ function timeToString(time) {
     return `${formattedMM}:${formattedSS}:${formattedMS}`;
 }
 
-//separação da lógica para mostrar o resultado no HTML para uma função própria para melhorar a leitura
-function print(txt) {
-    document.getElementById("display").innerHTML = txt;
-}
-
 // - Criação das variáves startTime e elapsedTime
 // - Função para armazenar Date.now() na variável startTime
 // - Uso da setInterval para definir elapsedTime como a diferença entre Date.now() renovado a cada 1000 milisegundos e startTime
 // - Uso do innerHTML para mostrar o resultado no HTML
 let startTime;
-let elapsedTime;
+let elapsedTime = 0;
+let timerInterval; // Variável para setInterval
+
+//separação da lógica para mostrar o resultado no HTML para uma função própria para melhorar a leitura
+function print(txt) {
+    document.getElementById("display").innerHTML = txt;
+}
+
 function start() {
-    startTime = Date.now();
-    setInterval(function printTime() {
+    startTime = Date.now() - elapsedTime;
+    timerInterval = setInterval(function printTime() {
         elapsedTime = Date.now() - startTime;
         print(timeToString(elapsedTime));
     }, 10); // renova a cada 10 milisegundos 
     //substituição do botão 'play' pelo 'pause'
     showButton("PAUSE");
+}
+
+function pause() {
+    clearInterval(timerInterval);
+    showButton("PLAY");
+}
+
+function reset() {
+    clearInterval(timerInterval);
+    print("00:00:00");
+    elapsedTime = 0;
+    showButton("PLAY");
 }
 
 // Função para os botões 'play' e 'pause'
@@ -60,5 +74,5 @@ let pauseButton = document.getElementById("pauseButton");
 let resetButton = document.getElementById("resetButton");
 
 playButton.addEventListener("click", start);
-playButton.addEventListener("click", pause);
-playButton.addEventListener("click", reset);
+pauseButton.addEventListener("click", pause);
+resetButton.addEventListener("click", reset);

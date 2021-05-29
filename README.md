@@ -3,9 +3,9 @@
 </h1>
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias" >Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>
 </p>
 
 <br>
@@ -22,7 +22,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O StopWatch é um projeto pessoal que visa o meu crescimento como programador web, em que com o tempo, a cada técnica, tecnologia ou ferramenta que aprendo, eu irei melhorar esse projeto, este servindo como um lugar para praticar o novo aprendizado e exercer a minha criatividade. 💰
+O StopWatch é um projeto pessoal que visa o meu crescimento como programador web, em que com o tempo, a cada técnica, tecnologia ou ferramenta que aprendo, eu irei melhorar esse projeto, este servindo como um lugar para praticar o novo aprendizado e exercer a minha criatividade. 💰 <br>
 Você pode visualizar o repositório do autor no [GitHub](https://github.com/tinloof/gold-stopwatch).
 
 ## 🔖 Layout
