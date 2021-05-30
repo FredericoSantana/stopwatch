@@ -1,16 +1,48 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background-color: #31394c;
     color: #ffffff;
 }
 
-h1 {
+h1, p {
     font-size: 48px;
     font-family: "Montserrat", sans-serif;
     font-weight: 200;
     text-align: center;
     line-height: 59px;
-    padding: 0;
     margin: 0;
+}
+p {
+    margin: 0;
+    padding: 2.5%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+ }
+
+.container {
+    display: grid;
+    grid-template-rows: 13vh 75vh 12vh;
+    grid-template-areas: "h"
+                         "m"
+                         "f"
+}
+
+header {
+    grid-area: h;
+}
+
+main {
+    grid-area: m;
+}
+
+footer {
+    grid-area: f;
 }
 
 .stopwatch {
@@ -18,7 +50,6 @@ h1 {
     justify-items: center;
     grid-row-gap: 23px;
     width: 100%;
-    padding-top: 25px;
 }
 
 .gold {
