@@ -16,14 +16,12 @@ h1, p {
     line-height: 59px;
     margin: 0;
 }
-p {
-    margin: 0;
-    padding: 2.5%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-content: center;
- }
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+}
 
 .container {
     display: grid;
@@ -43,6 +41,8 @@ main {
 
 footer {
     grid-area: f;
+    display: grid;
+    align-content: center;
 }
 
 .stopwatch {
@@ -50,6 +50,7 @@ footer {
     justify-items: center;
     grid-row-gap: 23px;
     width: 100%;
+    padding-bottom: 20%;
 }
 
 .gold {

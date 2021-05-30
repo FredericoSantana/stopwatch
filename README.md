@@ -24,11 +24,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O StopWatch é um projeto pessoal que visa o meu crescimento como programador web, em que com o tempo, a cada técnica, tecnologia ou ferramenta que aprendo, eu irei melhorar esse projeto, este servindo como um lugar para praticar o novo aprendizado e exercer a minha criatividade. 💰 <br>
+O Gold StopWatch é um projeto pessoal que visa o meu crescimento como programador web, em que com o tempo, a cada técnica, tecnologia ou ferramenta que aprendo, eu irei melhorar o projeto, este servindo como um lugar para praticar o novo aprendizado e exercer a minha criatividade. 💰 <br>
+O Gold StopWatch não é de minha criação. 
 Você pode visualizar o repositório do autor no [GitHub](https://github.com/tinloof/gold-stopwatch).
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto original através [desse link](https://gold-stopwatch.netlify.app/).
+Você pode visualizar o layout do projeto original através [deste link](https://gold-stopwatch.netlify.app/).
 
 ---
