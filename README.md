@@ -25,7 +25,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 O Gold StopWatch é um projeto pessoal que visa o meu crescimento como programador web, em que com o tempo, a cada técnica, tecnologia ou ferramenta que aprendo, eu irei melhorar o projeto, este servindo como um lugar para praticar o novo aprendizado e exercer a minha criatividade. 💰 <br>
-O Gold StopWatch não é de minha criação. 
+O Gold StopWatch não é de minha criação. <br>
 Você pode visualizar o repositório do autor no [GitHub](https://github.com/tinloof/gold-stopwatch).
 
 ## 🔖 Layout

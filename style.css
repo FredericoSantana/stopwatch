@@ -8,7 +8,7 @@ body {
     color: #ffffff;
 }
 
-h1, p {
+.style {
     font-size: 48px;
     font-family: "Montserrat", sans-serif;
     font-weight: 200;
@@ -33,6 +33,39 @@ a {
 
 header {
     grid-area: h;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 15vw 70vw 15vw;
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    grid-column: 2/3;
+    justify-self: center;
+    display: flex;
+}
+
+#menu li {
+    padding: 30px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 18px;
+    display: inline;
+}
+
+#menu a {
+    padding: 2.5%;
+    display: inline-block;
+    transition: all 400ms linear 0s;
+}
+
+#menu a:hover {
+    color: #f2c94c;
+    text-shadow: 0 0 0px #fff, 0 0 50px #f2c94c;
 }
 
 main {
