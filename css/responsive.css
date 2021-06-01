@@ -1,0 +1,81 @@
+html {
+    font-size: 80%;
+}
+
+#menu li {
+    font-weight: 500;
+}
+
+.circle {
+    height: 250px;
+    width: 250px;
+}
+
+/* Transformação para menu sanduíche */
+nav {
+    display: none;
+}
+.one,
+.two,
+.three {
+    background-color: #fff;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+    transition-duration: 0.3s;
+}
+.menu-toggle {
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+
+/* fullscreen */
+.on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #31394c;
+    opacity: 0.95;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.on nav {
+    display: block;
+}
+.on .menu-toggle {
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+
+/* Transformação do menu sanduíche */
+.on .menu-toggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+.on .menu-toggle .two{
+    opacity: 0;
+}
+.on .menu-toggle .three{
+    transform: rotate(-45deg) translate(8px, -9px);
+}
+
+/* Configuração do menu horizontal para vertical */
+#menu{
+    text-align: center;
+    display: block;
+}
+#menu a {
+    transition-duration: 0.5s;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 4rem;
+    display: block;
+}
