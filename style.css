@@ -33,6 +33,12 @@ a {
     color: #ffffff;
 }
 
+.menu-toggle {
+    position: absolute;
+        right: 0;
+        top: 15px;
+}
+
 #menu {
     list-style: none;
     padding: 0;
@@ -148,6 +154,12 @@ footer {
     html {
         font-size: 80%;
     }
+
+    .circle {
+        height: 250px;
+        width: 250px;
+    }
+
     /* Transformação para menu sanduíche */
     nav {
         display: none;
@@ -167,11 +179,7 @@ footer {
         margin-right: 20px;
     }
 
-    .circle {
-        height: 250px;
-        width: 250px;
-    }
-
+    
     /* fullscreen */
     .on {
         position: absolute;
