@@ -2,27 +2,12 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 body {
     background-color: #31394c;
     color: #ffffff;
 }
-
-.style {
-    font-size: 48px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 200;
-    text-align: center;
-    line-height: 59px;
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-    cursor: pointer;
-    color: #ffffff;
-}
-
 .container {
     display: grid;
     grid-template-rows: 13vh 75vh 12vh;
@@ -31,6 +16,8 @@ a {
                          "f"
 }
 
+/* ================HEADER=================== */
+
 header {
     grid-area: h;
 }
@@ -38,6 +25,12 @@ header {
 nav {
     display: grid;
     grid-template-columns: 15vw 70vw 15vw;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
 }
 
 #menu {
@@ -53,7 +46,7 @@ nav {
     padding: 30px;
     font-family: Montserrat;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.12rem;
     display: inline;
 }
 
@@ -68,14 +61,10 @@ nav {
     text-shadow: 0 0 0px #fff, 0 0 50px #f2c94c;
 }
 
+/* ================MAIN=================== */
+
 main {
     grid-area: m;
-}
-
-footer {
-    grid-area: f;
-    display: grid;
-    align-content: center;
 }
 
 .stopwatch {
@@ -86,16 +75,19 @@ footer {
     padding-bottom: 20%;
 }
 
+.style {
+    font-size: 3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    text-align: center;
+    line-height: 3.68rem;
+    margin: 0;
+}
+
 .gold {
     font-weight: 900;
     color: #f2c94c;
     text-shadow: 0 0 0px #fff, 0 0 50px #f2c94c;
-}
-
-.time {
-    font-family: "Roboto Mono", monospace;
-    font-weight: 300;
-    font-size: 48px;
 }
 
 .circle {
@@ -106,7 +98,19 @@ footer {
     width: 270px;  
     border: 2px solid;
     border-radius: 50%;
-  }
+}
+
+/* Deixar o cronômetro com 'hover' quando o mouse passa:
+ .circle:hover {
+    color: #f2c94c;
+    text-shadow: 0 0 0px #fff, 0 0 50px #f2c94c;
+} */
+
+.time {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    font-size: 3rem;
+}
 
 .controls {
     display: flex;
@@ -128,4 +132,25 @@ button {
 }
 #pauseButton {
     display: none;
+}
+
+/* ================FOOTER=================== */
+
+footer {
+    grid-area: f;
+    display: grid;
+    align-content: center;
+}
+
+/* ================MEDIA QUERIES=================== */
+
+@media (max-width: 425px) {
+    html {
+        font-size: 80%;
+    }
+
+    .circle {
+        height: 250px;
+        width: 250px;
+    }
 }
