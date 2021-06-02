@@ -1,20 +1,21 @@
 const express = require('express');
 const app = express();
 
+//Usando template engine
 app.set("view engine", "ejs");
 
 
 // Criação das rotas
 app.get("/", function(req, res){
-    res.render("index");
+    res.render("pages/index");
 })
 
 app.get("/sobre", function(req, res){
-    res.render("about");
+    res.render("pages/about");
 })
 
 app.get("/tempo", function(req, res){
-    res.render("time");
+    res.render("pages/time");
 })
 
 // Executar o servidor na porta 8080
