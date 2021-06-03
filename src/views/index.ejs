@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <%- include('partials/head') %>
-    </head>
+
+<head>
+    <%- include('partials/head') %>
+        <title>Gold Stopwatch</title>
+        <meta name="description" content="Cronômetro simples com as funções de iniciar, pausar e zerar">
+        <meta name="keywords" content="cronômetro, tempo">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Gold Stopwatch">
+        <meta property="og:description" content="Cronômetro simples com as funções de iniciar, pausar e zerar">
+        <meta property="og:site_name" content="Gold Stopwatch">
+        <meta property="og:images" content="">
+</head>
 
 
 <body class="container">
-    
+
     <%- include('partials/header') %>
 
-    <main class="stopwatch">
-        <h1 class="style">
-            <span class="gold">GOLD</span> STOPWATCH
-        </h1>
-        <div class="circle">
-            <span class="time" id="display">00:00:00</span>
-        </div>
-        <div class="controls">
-            <button class="buttonPlay">
-                <img id="playButton" src="/icons/play-button.svg" alt="Play button">
-                <img id="pauseButton" src="/icons/pause-button.svg" alt="Pause button">
-            </button>
-            <button class="buttonReset">
-                <img id="resetButton" src="/icons/reset-button.svg" alt="Reset button">
-            </button>
-        </div>
-    </main>
+        <main class="stopwatch">
+            <h1 class="style">
+                <span class="gold">GOLD</span> STOPWATCH
+            </h1>
+            <div class="circle">
+                <span class="time" id="display">00:00:00</span>
+            </div>
+            <div class="controls">
+                <button class="buttonPlay">
+                    <img id="playButton" src="/icons/play-button.svg" alt="Play button">
+                    <img id="pauseButton" src="/icons/pause-button.svg" alt="Pause button">
+                </button>
+                <button class="buttonReset">
+                    <img id="resetButton" src="/icons/reset-button.svg" alt="Reset button">
+                </button>
+            </div>
+        </main>
 
-    <%- include('partials/footer') %> 
-    
-    <script src="/scripts/script.js"></script>
-    <script src="/scripts/menu.js"></script>
+        <%- include('partials/footer') %>
+
+            <script src="/scripts/script.js"></script>
+            <script src="/scripts/menu.js"></script>
 </body>
 
 </html>
