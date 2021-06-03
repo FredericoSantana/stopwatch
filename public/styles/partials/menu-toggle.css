@@ -1,16 +1,3 @@
-html {
-    font-size: 80%;
-}
-
-#menu li {
-    font-weight: 500;
-}
-
-.circle {
-    height: 250px;
-    width: 250px;
-}
-
 /* Transformação para menu sanduíche */
 nav {
     display: none;
@@ -74,7 +61,7 @@ nav {
 }
 #menu a {
     transition-duration: 0.5s;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 500;
     line-height: 4rem;
     display: block;
