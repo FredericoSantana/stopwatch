@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+    .section-time
+    .img-size {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 425px) {
+    header {
+        height: 87px;
+    }
+    
+    .img-size {
+        height: 180px;
+        width: 180px;
+    }
+}
