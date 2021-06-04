@@ -2,46 +2,83 @@
 <html lang="en">
 
 <%- include('partials/head'); %>
-<title>Informações sobre o projeto</title>
-<link rel="stylesheet" href="/styles/pages/about.css">
-<meta name="description" content="Informações gerais sobre o autor, o projeto e tecnologias empregadas">
-<meta name="keywords" content="contato, redes sociais, tecnologia, projeto">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Informações sobre o projeto">
-<meta property="og:description" content="Informações gerais sobre o autor, o projeto e tecnologias empregadas">
-<meta property="og:site_name" content="Gold Stopwatch">
-<meta property="og:images" content="">
-
-
-
-<body class="container">
-
-    <%- include('partials/header'); %>
-
-    <main>
-        <div>
-            <article>
-                <h2></h2>
-                <p></p>
-            </article>
-        </div>
-        <section>
-            <h2>Minhas Redes Sociais</h2>
-            <a href="https://www.facebook.com">
-                <img src="/icons/facebook-color.svg" alt="Facebook">
-            </a>
-            <a href="https://www.instagram.com">
-                <img src="/icons/instagram-color.svg" alt="Instagram">
-            </a>
-            <a href="https://github.com/FredericoSantana">
-                <img src="/icons/github-color.svg" alt="GitHub">
-            </a>
-        </section>
-    </main>
+    <title>Informações sobre o projeto</title>
+    <link rel="stylesheet" href="/styles/pages/about.css">
     
-    <%- include('partials/footer'); %>
+    <meta name="description" content="Informações gerais sobre o autor, o projeto e tecnologias empregadas">
+    <meta name="keywords" content="contato, redes sociais, tecnologia, projeto">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Informações sobre o projeto">
+    <meta property="og:description" content="Informações gerais sobre o autor, o projeto e tecnologias empregadas">
+    <meta property="og:site_name" content="Gold Stopwatch">
+    <meta property="og:images" content="">
 
-    <script src="/scripts/menu.js"></script>
 
-</body>
+
+    <body>
+
+        <%- include('partials/header'); %>
+
+            <main>
+                <div>
+                    <h1 class="style">Projeto e Contato</h1>
+                </div>
+                <section class="section-about">
+                    <div>
+                        <h2>Referências e inspiração</h2>
+                    </div>
+                    <div>
+                        <p>A ideia desta aplicação web veio como uma forma de aplicar e praticar os meus conhecimentos
+                            em linguagem de programação voltada para internet. </p>
+                        
+                        <p>Este projeto foi inspirado <a class="link-about"
+                                href="https://tinloof.com/blog/how-to-build-a-stopwatch-with-html-css-js-react-part-1/">neste
+                                tutorial</a>, sobre como fazer um cronômetro usando as linguagens HTML, CSS e
+                            JavaScript, intitulado de Gold Stopwatch.</p>
+                        
+                        <p>
+                            Conheça o <a class="link-about" href="https://gold-stopwatch.netlify.app/">projeto original.</a> 
+                        </p>
+                        
+                        <p>
+                            Visite o repositório do projeto original no <a class="link-about" href="https://github.com/tinloof/gold-stopwatch">GitHub</a>
+                        </p>
+                        
+                        <p>
+                            Visite o repositório deste projeto no <a class="link-about" href="https://github.com/FredericoSantana/stopwatch">Github</a>
+                        </p>
+                        
+                    </div>
+
+                    <div>
+                        <h2>Este projeto foi desenvolvido com as seguintes tecnologias:</h2>
+                    </div>
+                    <div>
+
+                    </div>
+
+                    <div>
+                        <h2>Minhas Redes Sociais</h2>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com">
+                            <img src="/icons/facebook-color.svg" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com">
+                            <img src="/icons/instagram-color.svg" alt="Instagram">
+                        </a>
+                        <a href="https://github.com/FredericoSantana">
+                            <img src="/icons/github-color.svg" alt="GitHub">
+                        </a>
+                    </div>
+                </section>
+
+            </main>
+
+            <%- include('partials/footer'); %>
+
+                <script src="/scripts/menu.js"></script>
+
+    </body>
+
 </html>

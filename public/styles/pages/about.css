@@ -1,4 +1,45 @@
+.section-about {
+    font-family: "Montserrat";
+    width: 90%;
+    max-width: 750px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-row-gap: 20px;
+}
+
+.link-about {
+    font-weight: bold;
+    color: white;
+}
 img {
     height: 70px;
     width: 70px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-time a:hover {
+    color: #f2c94c;
+    text-shadow: 0 0 0px #fff, 0 0 50px #f2c94c;
+}
+
+footer {
+    margin: 30px 0 15px 0;
+}
+
+@media (max-width: 425px) {
+    header {
+        height: 87px;
+    }
+    h2 {
+        text-align: center;
+    }
+    img {
+        height: 50px;
+        width: 50px;
+    }
 }

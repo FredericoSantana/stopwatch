@@ -7,7 +7,7 @@ nav {
     grid-template-columns: 15vw 70vw 15vw;
 }
 
-a {
+.link-clear {
     text-decoration: none;
     cursor: pointer;
     color: #ffffff;
