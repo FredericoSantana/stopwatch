@@ -22,7 +22,7 @@ img {
     justify-content: space-evenly;
 }
 
-.section-time a:hover {
+.section-about a:hover {
     color: #f2c94c;
     text-shadow: 0 0 0px #fff, 0 0 50px #f2c94c;
 }
