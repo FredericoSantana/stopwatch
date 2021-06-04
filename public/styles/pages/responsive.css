@@ -6,3 +6,18 @@ html {
     height: 250px;
     width: 250px;
 }
+
+#playButton, 
+#pauseButton,
+#resetButton {
+    height: 55px;
+    width: 55px;
+}
+
+
+@media (max-width: 375px) {
+    .circle {
+        height: 220px;
+        width: 220px;
+    }
+}

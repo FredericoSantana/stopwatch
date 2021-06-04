@@ -1,5 +1,32 @@
 footer {
     grid-area: f;
-    display: grid;
-    align-content: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-media,
+.logo {
+    align-self: center;
+}
+
+.social-media img {
+    height: 35px;
+    width: 35px;
+    padding: 2px;
+}
+
+/* ===================RESPONSIVE=================== */
+
+@media (max-width: 425px) {
+    footer {
+        display: grid;
+    }
+    .social-media,
+    .logo {
+        justify-self: center;
+    }
+    .social-media img {
+        height: 25px;
+        width: 25px;
+    }
 }
