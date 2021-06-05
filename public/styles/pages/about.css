@@ -5,7 +5,11 @@
     display: grid;
     margin: auto;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    grid-row-gap: 20px;
+    grid-row-gap: 30px;
+}
+
+.section-about div {
+    margin-bottom: 20px;
 }
 
 .link-about {
@@ -17,6 +21,7 @@ img {
     width: 70px;
 }
 
+.lang,
 .social-media {
     display: flex;
     justify-content: space-evenly;
@@ -31,15 +36,38 @@ footer {
     margin: 30px 0 15px 0;
 }
 
+@media (max-width: 768px) {
+    img {
+        height: 60px;
+        width: 60px;
+    }
+}
+
 @media (max-width: 425px) {
     header {
         height: 87px;
     }
     h2 {
         text-align: center;
+        margin-bottom: 10px;
     }
     img {
         height: 50px;
         width: 50px;
+    }
+
+    .section-about {
+        grid-row-gap: 10px;
+    }
+
+    .section-about div {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    img {
+        height: 40px;
+        width: 40px;
     }
 }
