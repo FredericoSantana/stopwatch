@@ -1,97 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include('partials/head'); %>
-    <title>Informações sobre o projeto</title>
-    <link rel="stylesheet" href="/styles/pages/about.css">
-    
-    <meta name="description" content="Informações gerais sobre o autor, o projeto e tecnologias empregadas">
-    <meta name="keywords" content="contato, redes sociais, tecnologia, projeto">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Informações sobre o projeto">
-    <meta property="og:description" content="Informações gerais sobre o autor, o projeto e tecnologias empregadas">
-    <meta property="og:images" content="">
+<head>
+    <%- include('partials/head'); %>
+        <title>Informações sobre o projeto</title>
+        <link rel="stylesheet" href="/styles/pages/about.css">
 
+        <meta name="description" content="Informações gerais sobre o autor, o projeto e tecnologias empregadas">
+        <meta name="keywords" content="contato, redes sociais, tecnologia, projeto">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Informações sobre o projeto">
+        <meta property="og:description" content="Informações gerais sobre o autor, o projeto e tecnologias empregadas">
+        <meta property="og:images" content="">
+</head>
 
+<body>
 
-    <body>
+    <%- include('partials/header'); %>
 
-        <%- include('partials/header'); %>
-
-            <main>
+        <main>
+            <div>
+                <h1 class="style">Projeto e Contato</h1>
+            </div>
+            <section class="section-about">
                 <div>
-                    <h1 class="style">Projeto e Contato</h1>
+                    <h2>Referências e inspiração</h2>
                 </div>
-                <section class="section-about">
-                    <div>
-                        <h2>Referências e inspiração</h2>
-                    </div>
-                    <div>
-                        <p>A ideia desta aplicação web veio como uma forma de aplicar e praticar os meus conhecimentos
-                            em linguagem de programação voltada para internet. </p>
-                        
-                        <p>Este projeto foi inspirado <a class="link-about"
-                                href="https://tinloof.com/blog/how-to-build-a-stopwatch-with-html-css-js-react-part-1/" target="_blank" rel="noreferrer" rel="noopener">neste
-                                tutorial</a>, sobre como fazer um cronômetro usando as linguagens HTML, CSS e
-                            JavaScript, intitulado de Gold Stopwatch.</p>
-                        
-                        <p>
-                            Conheça o <a class="link-about" href="https://gold-stopwatch.netlify.app/" target="_blank" rel="noreferrer" rel="noopener">projeto original.</a> 
-                        </p>
-                        
-                        <p>
-                            Visite o repositório do projeto original no <a class="link-about" href="https://github.com/tinloof/gold-stopwatch" target="_blank" rel="noreferrer" rel="noopener">GitHub</a>
-                        </p>
-                        
-                        <p>
-                            Visite o repositório deste projeto no <a class="link-about" href="https://github.com/FredericoSantana/stopwatch" target="_blank" rel="noreferrer" rel="noopener">Github</a>
-                        </p>
-                        
-                    </div>
+                <div>
+                    <p>A ideia desta aplicação web veio como uma forma de aplicar e praticar os meus conhecimentos
+                        em linguagem de programação voltada para internet. </p>
 
-                    <div>
-                        <h2>Tecnologias empregadas</h2>
-                    </div>
-                    <div class="lang">
-                        <img src="/icons/html.svg" alt="HTML5">
-                        <img src="/icons/css.svg" alt="CSS3">
-                        <img src="/icons/javascript.svg" alt="JavaScript">
-                        <img src="/icons/nodejs.svg" alt="NodeJS">
-                    </div>
+                    <p>Este projeto foi inspirado <a class="link-about"
+                            href="https://tinloof.com/blog/how-to-build-a-stopwatch-with-html-css-js-react-part-1/"
+                            target="_blank" rel="noreferrer" rel="noopener">neste
+                            tutorial</a>, sobre como fazer um cronômetro usando as linguagens HTML, CSS e
+                        JavaScript, intitulado de Gold Stopwatch.</p>
 
-                    <div>
-                        <h2>Ferramentas utilizadas</h2>
-                    </div>
-                    <div class="lang">
-                        <img src="/icons/vscode.png" alt="Visual Studio Code">
-                        <img src="/icons/git-bash.png" alt="GitBash">
-                        <img src="/icons/github.svg" alt="GitHub">
-                        <img src="/icons/chrome.svg" alt="Google Chrome">
-                        <!-- <img src="/icons/nodejs.svg" alt="NodeJS"> -->
-                    </div>
+                    <p>
+                        Conheça o <a class="link-about" href="https://gold-stopwatch.netlify.app/" target="_blank"
+                            rel="noreferrer" rel="noopener">projeto original.</a>
+                    </p>
 
-                    <div>
-                        <h2>Minhas Redes Sociais</h2>
-                    </div>
-                    <div class="social-media">
-                        <a href="https://www.facebook.com" target="_blank" rel="noreferrer" rel="noopener">
-                            <img src="/icons/facebook-color.svg" alt="Facebook">
-                        </a>
-                        <a href="https://www.instagram.com" target="_blank" rel="noreferrer" rel="noopener">
-                            <img src="/icons/instagram-color.svg" alt="Instagram">
-                        </a>
-                        <a href="https://github.com/FredericoSantana" target="_blank" rel="noreferrer" rel="noopener">
-                            <img src="/icons/github-color.svg" alt="GitHub">
-                        </a>
-                    </div>
-                </section>
+                    <p>
+                        Visite o repositório do projeto original no <a class="link-about"
+                            href="https://github.com/tinloof/gold-stopwatch" target="_blank" rel="noreferrer"
+                            rel="noopener">GitHub</a>
+                    </p>
 
-            </main>
+                    <p>
+                        Visite o repositório deste projeto no <a class="link-about"
+                            href="https://github.com/FredericoSantana/stopwatch" target="_blank" rel="noreferrer"
+                            rel="noopener">Github</a>
+                    </p>
 
-            <%- include('partials/footer'); %>
+                </div>
 
-                <script src="/scripts/menu.js"></script>
+                <div>
+                    <h2>Tecnologias empregadas</h2>
+                </div>
+                <div class="lang">
+                    <img src="/icons/html.svg" alt="HTML5">
+                    <img src="/icons/css.svg" alt="CSS3">
+                    <img src="/icons/javascript.svg" alt="JavaScript">
+                    <img src="/icons/nodejs.svg" alt="NodeJS">
+                </div>
 
-    </body>
+                <div>
+                    <h2>Ferramentas utilizadas</h2>
+                </div>
+                <div class="lang">
+                    <img src="/icons/vscode.png" alt="Visual Studio Code">
+                    <img src="/icons/git-bash.png" alt="GitBash">
+                    <img src="/icons/github.svg" alt="GitHub">
+                    <img src="/icons/chrome.svg" alt="Google Chrome">
+                    <!-- <img src="/icons/nodejs.svg" alt="NodeJS"> -->
+                </div>
+
+                <div>
+                    <h2>Minhas Redes Sociais</h2>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com" target="_blank" rel="noreferrer" rel="noopener">
+                        <img src="/icons/facebook-color.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noreferrer" rel="noopener">
+                        <img src="/icons/instagram-color.svg" alt="Instagram">
+                    </a>
+                    <a href="https://github.com/FredericoSantana" target="_blank" rel="noreferrer" rel="noopener">
+                        <img src="/icons/github-color.svg" alt="GitHub">
+                    </a>
+                </div>
+            </section>
+
+        </main>
+
+        <%- include('partials/footer'); %>
+
+            <script src="/scripts/menu.js"></script>
+
+</body>
 
 </html>
